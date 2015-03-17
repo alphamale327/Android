@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wifihome.light.MainActivity" >
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/add" />
+
+    <ListView
+        android:id="@+id/devList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addBtn"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/MainModifyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addBtn"
+        android:layout_alignBottom="@+id/addBtn"
+        android:layout_toLeftOf="@+id/addBtn"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/modify" />
+
+</RelativeLayout>
